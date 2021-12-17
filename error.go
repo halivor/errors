@@ -51,11 +51,11 @@ func (e Error) ErrorMessage() string {
 	return e.Message
 }
 
-func (e Error) DebugrMessage() string {
+func (e Error) DebugMessage() string {
 	return e.Debug
 }
 
-func (e Error) SetDebugMessage(message string) Error {
+func (e Error) WithDebugMessage(message string) Error {
 	e.Debug = message
 	return e
 }
